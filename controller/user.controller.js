@@ -10,7 +10,7 @@ let addUser = (req, res, next) => {
   console.log(body);
   if (!body.name || !body.lastname) throw new Error("Ma'lumotlar to'liq emas");
   let data = userService.addUser(body);
-  res.status(200).json({ title: "O'quvchi qosjhildi", data });
+  res.status(200).json({ title: "O'quvchi qoshildi", data });
 };
 
 let updateUser = (req, res, next) => {
